@@ -139,11 +139,15 @@ header {
 }
 
 #bacgroud-video {
-    position: absolute;
+    position: fixed;
     background-size: cover;
     align-items: center;
+    /*
     min-height: 110vh;
     min-height: calc(90vh+80px);
+*/
+    height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
 }
@@ -851,21 +855,22 @@ line {
     position: absolute;
     width: 200px;
     top: 240px;
-    left: 60px
+    left: 60px;
 }
 
 .lines1 {
     position: absolute;
     width: 300px;
     top: 220px;
-    left: 200px
+    left: 200px;
 }
 
 .lines3 {
     position: absolute;
     width: 300px;
     top: 180px;
-    left: 400px
+    left: 400px;
+    background-color: #fff;
 }
 
 .mid-content {
@@ -1044,8 +1049,8 @@ line {
     height: 900px;
     width: 100%;
     display: block;
-    z-index: 10000;
     background-image: url('/lengthhart/img/s_bg_4.jpg')no-repeat;
+    background-position: center;
 }
 
 #title-page3 {
@@ -1056,7 +1061,7 @@ line {
 #title-page3 h2 {
     font-size: 2.5sem;
     font-weight: bold;
-    color: #32363e;
+    color: #fff;
 }
 
 #page3-content {
@@ -1207,7 +1212,7 @@ line {
     max-width: 200px;
     max-height: 78px;
     transition-duration: 2s;
-    transition-delay: 2.5s6
+    transition-delay: 2.5s6;
 }
 
 .line1-box {
@@ -1286,6 +1291,7 @@ line {
     height: 160px;
     top: 30%;
     left: 3%;
+    color: #fff;
 }
 
 #title-for-svg .box-detail {
@@ -1350,10 +1356,12 @@ line {
 
 #bacgroud-video2 {
     width: 100%;
-    height: 1242px;
+    height: 100%;
     position: absolute;
     top: -100px;
     left: 0;
+    z-index: 0;
+    top: 70px;
 }
 
 #title-page4 {
@@ -1469,6 +1477,7 @@ small {
     background: url(../img/s_bg_6.jpg) no-repeat;
     width: 100%;
     display: block;
+    color: #fff;
 }
 
 .title-page5 {
@@ -1525,6 +1534,7 @@ small {
     color: #e74c3c;
     background-color: transparent;
     overflow: hidden;
+    z-index: 1000;
 }
 
 .form-field input {
@@ -1708,6 +1718,7 @@ html|*> svg {
 #final-effect img {
     transform: translateY(-150px);
     opacity: 0;
+    z-index: 0;
 }
 
 #page1,
